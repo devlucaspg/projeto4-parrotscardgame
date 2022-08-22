@@ -80,16 +80,8 @@ main {
     transform: rotateY(-180deg);
 }
 
-
-
-
-
-/*
-  .card:hover .back {
-    transform: rotateY(0deg);
-  }
-
-  .card:hover .front {
-    transform: rotateY(-180deg);
-  }
-*/
+.match {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+}

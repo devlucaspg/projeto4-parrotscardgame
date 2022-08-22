@@ -3,6 +3,8 @@ let cardsOption = ["img/parrot1.gif", "img/parrot2.gif", "img/parrot3.gif", "img
 let mixOption = cardsOption.sort(comparador);
 let pairsNumber;
 let selectedCards = [];
+let click1;
+let click2;
 
 startGame();
 
@@ -50,8 +52,16 @@ function flipCard(flip) {
     let front = flip.children[0];
     back.classList.toggle("flipCard2");
     front.classList.toggle("flipCard1");
-}
-
+    if (click1 === undefined) {
+        click1 = flip.children[0].children[0].src;
+    } else {
+        click2 = flip.children[0].children[0].src;}
+    
+    if (click1 === click2) {
+        disable
+    }
+}    
 function comparador() { 
     return Math.random() - 0.5; 
 }
+
