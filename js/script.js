@@ -58,7 +58,7 @@ function flipCard(flip) {
         click2 = flip.children[0].children[0].src;}
     
     if (click1 === click2) {
-        disable
+        
     }
 }    
 function comparador() { 
